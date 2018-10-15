@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Generator.Pythia8CommonSettings_cfi import *
-from Configuration.Generator.Pythia8CUEP8M1Settings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
 
 generator = cms.EDFilter("Pythia8GeneratorFilter",
    crossSection = cms.untracked.double(1.755e-04),  
@@ -12,7 +12,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
    comEnergy = cms.double(13000.0),
    PythiaParameters = cms.PSet(
    pythia8CommonSettingsBlock,
-   pythia8CUEP8M1SettingsBlock,
+   pythia8CP5SettingsBlock,
    processParameters = cms.vstring(
            'Main:timesAllowErrors = 10000',
            'Charmonium:all = on', # turn on charmonium production
@@ -56,7 +56,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
            '9942003:onIfAny = 443 21',
        ),
        parameterSets = cms.vstring('pythia8CommonSettings',
-                                   'pythia8CUEP8M1Settings',
+                                   'pythia8CP5Settings',
                                    'processParameters')
    )
 )
