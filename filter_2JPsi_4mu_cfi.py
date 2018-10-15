@@ -5,9 +5,6 @@ def filter_2JPsi_Pt3_4mu(process):
     # Double J/psi filter
     process.oniagenfilter = cms.EDFilter("MCParticlePairFilter",
                                          Status = cms.untracked.vint32(2, 2),
-                                         #MinPt = cms.untracked.vdouble(3.0, 3.0),
-                                         #MaxEta = cms.untracked.vdouble(2.5, 2.5),
-                                         #MinEta = cms.untracked.vdouble(-2.5, -2.5),
                                          ParticleCharge = cms.untracked.int32(0),
                                          ParticleID1 = cms.untracked.vint32(443),
                                          ParticleID2 = cms.untracked.vint32(443)
