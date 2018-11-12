@@ -14,7 +14,7 @@
 #GSLINCLUDE=-I/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/gsl/1.16/include/
 #HERWIGINCLUDE=-I/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/herwigpp/2.7.1-ikhhed3/include
 
-#2017 MC: CMSSW_9_3_9_patch1
+#2017 MC: CMSSW_9_3_9_patch1, CMSSW_9_3_12_patch2
 THEPEGINCLUDE=-I/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/thepeg/1.9.2p1-ghjeda/include
 GSLINCLUDE=-I/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gsl/2.2.1/include
 HERWIGINCLUDE=-I/cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/herwigpp/2.7.1-ghjeda/include
